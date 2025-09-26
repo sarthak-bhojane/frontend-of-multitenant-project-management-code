@@ -148,6 +148,7 @@ function SuperAdminLogin({ setToken, setRole }) {
       <h2>Super Admin Login</h2>
       <input type="password" placeholder="Super Admin Password" value={password} onChange={(e) => setPassword(e.target.value)} className="input-field" />
       <button onClick={handleLogin} className="btn-primary mt-2">Login</button>
+      <h5>Try this - superadmin@123</h5>
     </div>
   );
 }
