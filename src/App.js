@@ -12,7 +12,10 @@ import {
 import "./App.css";
 
 const client = new ApolloClient({
-  link: new HttpLink({ uri: "http://localhost:4000/graphql" }),
+  link: new HttpLink({ 
+    // uri: "http://localhost:4000/graphql" 
+     uri: "https://backend-mulitenant-project-managent.onrender.com/graphql" 
+  }),
   cache: new InMemoryCache(),
 });
 
